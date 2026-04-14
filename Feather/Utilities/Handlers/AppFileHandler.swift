@@ -69,9 +69,12 @@ final class AppFileHandler: NSObject, @unchecked Sendable {
 							if let download = download {
 								DispatchQueue.main.async {
 									download.unpackageProgress = progress
+									
+									#if !targetEnvironment(macCatalyst)
 									if #available(iOS 26.0, *) {
 										BackgroundTaskManager.shared.updateProgress(for: download.id, progress: download.overallProgress)
 									}
+									#endif
 								}
 							}
 						}

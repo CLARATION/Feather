@@ -78,25 +78,34 @@ struct InstallPreviewView: View {
 						)
 					}
 				}
-                
+				
 				switch newStatus {
 				case .completed, .broken(_):
 					progressTask?.cancel()
 					progressTask = nil
+					#if !targetEnvironment(macCatalyst)
 					BackgroundAudioManager.shared.stop()
+					#endif
 				default:
 					break
 				}
 			}
 		}
 		.onAppear(perform: _install)
+		
+		#if !targetEnvironment(macCatalyst)
 		.onAppear {
 			BackgroundAudioManager.shared.start()
 		}
+		#endif
+		
 		.onDisappear {
 			progressTask?.cancel()
 			progressTask = nil
+			
+			#if !targetEnvironment(macCatalyst)
 			BackgroundAudioManager.shared.stop()
+			#endif
 		}
 	}
 	
