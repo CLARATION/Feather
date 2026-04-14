@@ -100,7 +100,9 @@ struct Options: Codable, Equatable {
 	var removeProvisioning: Bool
 	/// Forcefully rename string files for App name
 	var changeLanguageFilesForCustomDisplayName: Bool
-	
+	/// If tweaks should be injected into all app extensions (PlugIns and Extensions)
+	var injectIntoExtensions: Bool
+
 	// MARK: Experiments
 	
 	/// Modifies app to support liquid glass
@@ -143,6 +145,7 @@ struct Options: Codable, Equatable {
 		removeURLScheme: false,
 		removeProvisioning: false,
 		changeLanguageFilesForCustomDisplayName: false,
+		injectIntoExtensions: false,
 		
 		// MARK: Experiments
 		

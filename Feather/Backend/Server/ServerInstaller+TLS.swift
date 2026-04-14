@@ -48,8 +48,8 @@ extension ServerInstaller {
 		
 		if getServerMethod() == 1 {
 			return !self.getIPFix()
-			? (Self.getLocalAddress() ?? localhost)
-			: localhost
+				? (Self.getLocalAddress() ?? localhost)
+				: localhost
 		} else {
 			return readCommonName() ?? localhost
 		}
@@ -118,8 +118,8 @@ extension ServerInstaller {
 						
 						var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
 						if getnameinfo(interface.ifa_addr, socklen_t(interface.ifa_addr.pointee.sa_len),
-									   &hostname, socklen_t(hostname.count),
-									   nil, socklen_t(0), NI_NUMERICHOST) == 0 {
+						               &hostname, socklen_t(hostname.count),
+						               nil, socklen_t(0), NI_NUMERICHOST) == 0 {
 							address = String(cString: hostname)
 						}
 						

@@ -13,13 +13,13 @@ import CoreData
 // MARK: - View
 struct ResetView: View {
 	// MARK: Body
-    var body: some View {
+	var body: some View {
 		NBList(.localized("Reset")) {
 			_cache()
 			_coredata()
 			_all()
 		}
-    }
+	}
 	
 	private func _cacheSize() -> String {
 		var totalCacheSize = URLCache.shared.currentDiskUsage
@@ -43,8 +43,8 @@ struct ResetView: View {
 		}
 		
 		let style: UIAlertController.Style = UIDevice.current.userInterfaceIdiom == .pad
-		? .alert
-		: .actionSheet
+			? .alert
+			: .actionSheet
 		
 		var msg = ""
 		if !message.isEmpty { msg = message + "\n" }

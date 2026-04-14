@@ -59,7 +59,7 @@ final public class ASDeobfuscator {
 		
 		let trimmedResult = decodedString.trimmingCharacters(in: .whitespacesAndNewlines)
 		return trimmedResult.isEmpty
-		? []
-		: [trimmedResult]
+			? []
+			: [trimmedResult]
 	}
 }

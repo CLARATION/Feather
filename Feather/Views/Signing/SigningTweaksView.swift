@@ -30,6 +30,10 @@ struct SigningTweaksView: View {
 					selection: $options.injectFolder,
 					values: Options.InjectFolder.allCases
 				)
+				
+				Toggle(isOn: $options.injectIntoExtensions) {
+					Label(.localized("Inject into Extensions"), systemImage: "syringe")
+				}
 			}
 			
 			NBSection(.localized("Tweaks")) {

@@ -329,7 +329,7 @@ extension SigningHandler {
 					}
 				}
                 
-                infoDict["NSExtension"] = extensionDict
+				infoDict["NSExtension"] = extensionDict
 			}
 			
 			if didChange {

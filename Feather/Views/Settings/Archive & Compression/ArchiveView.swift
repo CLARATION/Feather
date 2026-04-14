@@ -15,7 +15,7 @@ struct ArchiveView: View {
 	@AppStorage("Feather.useShareSheetForArchiving") private var _useShareSheet: Bool = false
 	
 	// MARK: Body
-    var body: some View {
+	var body: some View {
 		NBList(.localized("Archive & Compression")) {
 			Section {
 				Picker(.localized("Compression Level"), systemImage: "archivebox", selection: $_compressionLevel) {
@@ -31,5 +31,5 @@ struct ArchiveView: View {
 				Text(.localized("Toggling show sheet will present a share sheet after exporting to your files."))
 			}
 		}
-    }
+	}
 }

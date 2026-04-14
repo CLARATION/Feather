@@ -24,7 +24,7 @@ let package = Package(
 			dependencies: []
 		),
 		.target(name: "NimbleJSON",
-			dependencies: []
+		        dependencies: []
 		)
 	]
 )

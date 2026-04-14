@@ -39,7 +39,7 @@ struct AppearanceView: View {
 	}
 	
 	// MARK: Body
-    var body: some View {
+	var body: some View {
 		NBList(.localized("Appearance")) {
 			Section {
 				Picker(.localized("Appearance"), selection: $_userIntefacerStyle) {
@@ -94,5 +94,5 @@ struct AppearanceView: View {
 				UIApplication.topViewController()?.view.window?.overrideUserInterfaceStyle = style
 			}
 		}
-    }
+	}
 }

@@ -75,9 +75,9 @@ struct LibraryCellView: View {
 		.padding(isRegular ? 12 : 0)
 		.background(
 			isRegular
-			? RoundedRectangle(cornerRadius: 18, style: .continuous)
+				? RoundedRectangle(cornerRadius: 18, style: .continuous)
 				.fill(_isSelected && isEditing ? Color.accentColor.opacity(0.1) : Color(.quaternarySystemFill))
-			: nil
+				: nil
 		)
 		.contentShape(Rectangle())
 		.onTapGesture {

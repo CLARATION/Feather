@@ -77,7 +77,7 @@ struct DownloadItemView: View {
 	
 	private var overallProgress: Double {
 		download.onlyArchiving
-		? unpackageProgress
-		: (0.3 * unpackageProgress) + (0.7 * progress)
+			? unpackageProgress
+			: (0.3 * unpackageProgress) + (0.7 * progress)
 	}
 }

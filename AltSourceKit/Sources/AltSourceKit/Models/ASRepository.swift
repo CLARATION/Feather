@@ -102,17 +102,17 @@ public struct ASRepository: Sendable, Decodable, Hashable, Identifiable {
 	public enum CodingKeys: String, CodingKey {
 		case id = "identifier"
 		case name,
-			 subtitle,
-			 description,
-			 website,
-			 patreonURL,
-			 userInfo,
-			 iconURL,
-			 headerURL,
-			 tintColor,
-			 apps,
-			 featuredApps,
-			 news
+		     subtitle,
+		     description,
+		     website,
+		     patreonURL,
+		     userInfo,
+		     iconURL,
+		     headerURL,
+		     tintColor,
+		     apps,
+		     featuredApps,
+		     news
 	}
 	
 	public var currentIconURL: URL? {
@@ -265,8 +265,8 @@ extension ASRepository {
 
 			self.size =
 				(try? container.decodeIfPresent(Int64.self, forKey: .size))
-				?? (try? container.decodeIfPresent(String.self, forKey: .size))
-				.flatMap { Int64($0) }
+					?? (try? container.decodeIfPresent(String.self, forKey: .size))
+					.flatMap { Int64($0) }
 
 			self.category = try container.decodeIfPresent(
 				String.self,
@@ -348,7 +348,7 @@ extension ASRepository {
 			case name, subtitle, description
 			case developer = "developerName"
 			case versions, version, versionDate, date, versionDescription, downloadURL,
-				localizedDescription, iconURL, tintColor, size, category, beta
+			     localizedDescription, iconURL, tintColor, size, category, beta
 			case permissions, appPermissions
 			case screenshots, screenshotURLs
 			case marketplaceID
@@ -423,8 +423,8 @@ extension ASRepository {
 				)
 				self.size =
 					(try? container.decodeIfPresent(UInt.self, forKey: .size))
-					?? (try? container.decodeIfPresent(String.self, forKey: .size))
-					.flatMap { UInt($0) }
+						?? (try? container.decodeIfPresent(String.self, forKey: .size))
+						.flatMap { UInt($0) }
 				self.minOSVersion = try container.decodeIfPresent(
 					OSVersion.self,
 					forKey: .minOSVersion
@@ -594,7 +594,7 @@ public struct DateParsed: Codable, Equatable, Hashable, Comparable, Sendable {
 			"yyyy-MM-dd'T'HH:mm:ss.SSSZ",
 			"yyyy-MM-dd'T'HH:mm:ssZ",
 			"yyyy-MM-dd'T'HH:mm:ss",
-            "yyyy-MM-dd'T'HH:mm",            // AltStudio
+			"yyyy-MM-dd'T'HH:mm",            // AltStudio
 			"yyyy-MM-dd",
 			"EEE, dd MMM yyyy HH:mm:ss zzz", // RFC1123
 			"EEE MMM dd HH:mm:ss Z yyyy",    // Twitter

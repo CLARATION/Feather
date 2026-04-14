@@ -42,5 +42,5 @@ public struct NBButton: View {
 				.background(Color(uiColor: .quaternarySystemFill))
 				.clipShape(Capsule())
 		}
-    }
+	}
 }

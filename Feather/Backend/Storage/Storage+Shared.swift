@@ -12,8 +12,8 @@ extension Storage {
 	func getUuidDirectory(for app: AppInfoPresentable) -> URL? {
 		guard let uuid = app.uuid else { return nil }
 		return app.isSigned
-		? FileManager.default.signed(uuid)
-		: FileManager.default.unsigned(uuid)
+			? FileManager.default.signed(uuid)
+			: FileManager.default.unsigned(uuid)
 	}
 	
 	func getAppDirectory(for app: AppInfoPresentable) -> URL? {

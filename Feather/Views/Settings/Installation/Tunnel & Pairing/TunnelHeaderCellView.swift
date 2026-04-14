@@ -37,7 +37,7 @@ struct TunnelPulseRing: View {
 			let progress = min(1.0, max(0.0, timeSinceHeartbeat / _animationDuration))
 			
 			let colorTransitionProgress = min(1.0,
-				max(0.0, (timeSinceHeartbeat - _colorStartThreshold) / _colorTransitionDuration)
+			                                  max(0.0, (timeSinceHeartbeat - _colorStartThreshold) / _colorTransitionDuration)
 			)
 			
 			Circle()

@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-15
+    runs-on: macos-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -21,3 +21,4 @@ jobs:
           default_author: github_actions
           message: "chore: update repo"
           add: app-repo.json
+          push: true

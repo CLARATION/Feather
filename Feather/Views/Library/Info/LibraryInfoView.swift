@@ -14,7 +14,7 @@ struct LibraryInfoView: View {
 	var app: AppInfoPresentable
 	
 	// MARK: Body
-    var body: some View {
+	var body: some View {
 		NBNavigationView(app.name ?? "", displayMode: .inline) {
 			List {
 				Section {} header: {
@@ -37,7 +37,7 @@ struct LibraryInfoView: View {
 				NBToolbarButton(role: .close)
 			}
 		}
-    }
+	}
 }
 
 // MARK: - Extension: View

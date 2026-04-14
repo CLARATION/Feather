@@ -27,9 +27,9 @@ struct SourcesCellView: View {
 		.padding(isRegular ? 12 : 0)
 		.background(
 			isRegular
-			? RoundedRectangle(cornerRadius: 18, style: .continuous)
+				? RoundedRectangle(cornerRadius: 18, style: .continuous)
 				.fill(Color(.quaternarySystemFill))
-			: nil
+				: nil
 		)
 		.swipeActions {
 			_actions(for: source)

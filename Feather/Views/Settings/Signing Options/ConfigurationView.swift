@@ -15,27 +15,27 @@ struct ConfigurationView: View {
 	@State var randomString = ""
 	
 	// MARK: Body
-    var body: some View {
+	var body: some View {
 		NBList(.localized("Signing Options")) {
-            Section {
-                NavigationLink(destination: ConfigurationDictView(
-                    title: .localized("Display Names"),
-                        dataDict: $_optionsManager.options.displayNames
-                    )
-                ) {
-                    Label(.localized("Display Names"), systemImage: "character.cursor.ibeam")
-                }
-                NavigationLink(destination: ConfigurationDictView(
-                        title: .localized("Identifiers"),
-                        dataDict: $_optionsManager.options.identifiers
-                    )
-                ) {
-                    Label(.localized("Identifiers"), systemImage: "person.text.rectangle")
-                }
-            }footer: {
-                Text(.localized("This allows you to set rules for automatically replacing the Bundle ID/Display Name when signing an app."))
-            }
-            SigningOptionsView(options: $_optionsManager.options)
+			Section {
+				NavigationLink(destination: ConfigurationDictView(
+					title: .localized("Display Names"),
+					dataDict: $_optionsManager.options.displayNames
+				)
+				) {
+					Label(.localized("Display Names"), systemImage: "character.cursor.ibeam")
+				}
+				NavigationLink(destination: ConfigurationDictView(
+					title: .localized("Identifiers"),
+					dataDict: $_optionsManager.options.identifiers
+				)
+				) {
+					Label(.localized("Identifiers"), systemImage: "person.text.rectangle")
+				}
+			}footer: {
+				Text(.localized("This allows you to set rules for automatically replacing the Bundle ID/Display Name when signing an app."))
+			}
+			SigningOptionsView(options: $_optionsManager.options)
 		}
 		.toolbar {
 			NBToolbarMenu(
@@ -52,7 +52,7 @@ struct ConfigurationView: View {
 		.onChange(of: _optionsManager.options) { _ in
 			_optionsManager.saveOptions()
 		}
-    }
+	}
 }
 
 // MARK: - Extension: View

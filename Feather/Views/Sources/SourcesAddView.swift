@@ -36,7 +36,7 @@ struct SourcesAddView: View {
 	
 	@State var recommendedSourcesData: [(url: URL, data: ASRepository)] = []
 	let recommendedSources: [URL] = [
-		"https://raw.githubusercontent.com/khcrysalis/Feather/refs/heads/main/app-repo.json",
+		"https://raw.githubusercontent.com/claration/Feather/refs/heads/main/app-repo.json",
 		"https://raw.githubusercontent.com/Aidoku/Aidoku/altstore/apps.json",
 		"https://github.com/chachillie/Flycast-iOS/raw/main/flycast-ios.json",
 		"https://xitrix.github.io/iTorrent/AltStore.json",
@@ -77,25 +77,25 @@ struct SourcesAddView: View {
 						}
 					}
 					
-				Button(.localized("Export"), systemImage: "doc.on.doc") {
-					let sources = Storage.shared.getSources()
-					guard !sources.isEmpty else {
+					Button(.localized("Export"), systemImage: "doc.on.doc") {
+						let sources = Storage.shared.getSources()
+						guard !sources.isEmpty else {
+							UIAlertController.showAlertWithOk(
+								title: .localized("Error"),
+								message: .localized("No sources to export")
+							)
+							return
+						}
+						UIPasteboard.general.string = sources.map {
+							$0.sourceURL!.absoluteString
+						}.joined(separator: "\n")
 						UIAlertController.showAlertWithOk(
-							title: .localized("Error"),
-							message: .localized("No sources to export")
-						)
-						return
+							title: .localized("Success"),
+							message: .localized("Sources copied to clipboard")
+						) {
+							dismiss()
+						}
 					}
-					UIPasteboard.general.string = sources.map {
-						$0.sourceURL!.absoluteString
-					}.joined(separator: "\n")
-					UIAlertController.showAlertWithOk(
-						title: .localized("Success"),
-						message: .localized("Sources copied to clipboard")
-					) {
-						dismiss()
-					}
-				}
 				} footer: {
 					Text(.localized("Supports importing from KravaSign/MapleSign and ESign."))
 				}
@@ -119,7 +119,7 @@ struct SourcesAddView: View {
 							}
 						}
 					} footer: {
-						Text(.localized("Open an [issue](https://github.com/khcrysalis/Feather/issues) on GitHub if you want your source to be featured."))
+						Text(.localized("Open an [issue](https://github.com/claration/Feather/issues) on GitHub if you want your source to be featured."))
 					}
 				}
 			}

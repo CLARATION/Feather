@@ -45,10 +45,10 @@ extension Date {
 	private static func _expirationFormatter(for interval: TimeInterval) -> DateComponentsFormatter {
 		let formatter = DateComponentsFormatter()
 		formatter.allowedUnits = interval < 3600
-		? [.minute]
-		: interval < 86400
-		? [.hour]
-		: [.day]
+			? [.minute]
+			: interval < 86400
+			? [.hour]
+			: [.day]
 		formatter.unitsStyle = .full
 		return formatter
 	}

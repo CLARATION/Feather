@@ -19,7 +19,7 @@ struct InstallationView: View {
 	]
 	
 	// MARK: Body
-    var body: some View {
+	var body: some View {
 		NBList(.localized("Installation")) {
 			Section {
 				Picker(.localized("Installation Type"), systemImage: "arrow.down.app", selection: $_installationMethod) {
@@ -47,11 +47,11 @@ struct InstallationView: View {
 			}
 			Button(.localized("OK"), role: .cancel) {}
 		} message: {
-            Text(.localized("idevice warning"))
+			Text(.localized("idevice warning"))
 		}
 
 
 		.animation(.default, value: _installationMethod)
-    }
+	}
 }
 

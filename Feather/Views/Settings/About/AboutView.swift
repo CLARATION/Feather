@@ -65,7 +65,7 @@ struct AboutView: View {
 					Text(try! AttributedString(markdown: _donators.map {
 						"[\($0.name ?? $0.github)](https://github.com/\($0.github))"
 					}.joined(separator: ", ")))
-					.transition(.slide)
+						.transition(.slide)
 					
 					Text(.localized("💜 This couldn't of been done without my sponsors!"))
 						.foregroundStyle(.secondary)
@@ -106,8 +106,8 @@ struct AboutView: View {
 	
 	private func _fetchCredits(_ urlString: String, using service: NBFetchService) async -> (String, CreditsDataHandler) {
 		let type = urlString == _creditsUrl 
-		? "credits"
-		: "donators"
+			? "credits"
+			: "donators"
 		
 		return await withCheckedContinuation { continuation in
 			service.fetch(from: urlString) { (result: CreditsDataHandler) in

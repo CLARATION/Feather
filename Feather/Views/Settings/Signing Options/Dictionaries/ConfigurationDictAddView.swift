@@ -23,7 +23,7 @@ struct ConfigurationDictAddView: View {
 	@Binding var dataDict: [String: String]
 	
 	// MARK: Body
-    var body: some View {
+	var body: some View {
 		NBList(.localized("New")) {
 			Section {
 				TextField(.localized("Value"), text: $_newKey)
@@ -43,5 +43,5 @@ struct ConfigurationDictAddView: View {
 				dismiss()
 			}
 		}
-    }
+	}
 }

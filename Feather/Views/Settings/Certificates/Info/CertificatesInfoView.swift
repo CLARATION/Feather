@@ -17,7 +17,7 @@ struct CertificatesInfoView: View {
 	var cert: CertificatePair
 	
 	// MARK: Body
-    var body: some View {
+	var body: some View {
 		NBNavigationView(cert.nickname ?? "", displayMode: .inline) {
 			Form {
 				Section {} header: {
@@ -47,7 +47,7 @@ struct CertificatesInfoView: View {
 		.onAppear {
 			data = Storage.shared.getProvisionFileDecoded(for: cert)
 		}
-    }
+	}
 }
 
 // MARK: - Extension: View

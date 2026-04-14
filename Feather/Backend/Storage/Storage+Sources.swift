@@ -63,8 +63,8 @@ extension Storage {
 			url,
 			name: repository.name,
 			identifier: !id.isEmpty
-						? id
-						: (repository.id ?? url.absoluteString),
+				? id
+				: (repository.id ?? url.absoluteString),
 			iconURL: repository.currentIconURL,
 			deferSave: deferSave,
 			completion: completion

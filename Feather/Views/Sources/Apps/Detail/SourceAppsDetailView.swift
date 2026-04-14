@@ -26,7 +26,7 @@ struct SourceAppsDetailView: View {
 	var source: ASRepository
 	var app: ASRepository.App
 	
-    var body: some View {
+	var body: some View {
 		ScrollView {
 			if #available(iOS 18, *) {
 				_header().flexibleHeaderContent()
@@ -67,13 +67,13 @@ struct SourceAppsDetailView: View {
 				_infoPills(app: app)
 				Divider()
                 
-                if let screenshotURLs = app.screenshotURLs {
-                    NBSection(.localized("Screenshots")) {
-                        _screenshots(screenshotURLs: screenshotURLs)
-                    }
+				if let screenshotURLs = app.screenshotURLs {
+					NBSection(.localized("Screenshots")) {
+						_screenshots(screenshotURLs: screenshotURLs)
+					}
                     
-                    Divider()
-                }
+					Divider()
+				}
 				
 				if
 					let currentVer = app.currentVersion,
@@ -85,15 +85,15 @@ struct SourceAppsDetailView: View {
 							date: app.currentDate?.date,
 							description: whatsNewDesc
 						)
-                        if let versions = app.versions {
-                            NavigationLink(
-                                destination: VersionHistoryView(app: app, versions: versions)
-                                    .navigationTitle(.localized("Version History"))
-                                    .navigationBarTitleDisplayMode(.large)
-                            ) {
-                                Text(.localized("Version History"))
-                            }
-                        }
+						if let versions = app.versions {
+							NavigationLink(
+								destination: VersionHistoryView(app: app, versions: versions)
+									.navigationTitle(.localized("Version History"))
+									.navigationBarTitleDisplayMode(.large)
+							) {
+								Text(.localized("Version History"))
+							}
+						}
 					}
 					
 					Divider()
@@ -110,11 +110,11 @@ struct SourceAppsDetailView: View {
 					Divider()
 				}
                 
-                NBSection(.localized("Information")) {
-                    VStack(spacing: 12) {
-                        if let sourceName = source.name {
-                            _infoRow(title: .localized("Source"), value: sourceName)
-                        }
+				NBSection(.localized("Information")) {
+					VStack(spacing: 12) {
+						if let sourceName = source.name {
+							_infoRow(title: .localized("Source"), value: sourceName)
+						}
                         
 						if let developer = app.developer {
 							_infoRow(title: .localized("Developer"), value: developer)
@@ -125,7 +125,7 @@ struct SourceAppsDetailView: View {
 						}
 						
 						if let category = app.category {
-                            _infoRow(title: .localized("Category"), value: category.capitalized)
+							_infoRow(title: .localized("Category"), value: category.capitalized)
 						}
 						
 						if let version = app.currentVersion {
@@ -140,7 +140,7 @@ struct SourceAppsDetailView: View {
 							_infoRow(title: .localized("Identifier"), value: bundleId)
 						}
 					}
-                }
+				}
 				
 				if let appPermissions = app.appPermissions {
 					NBSection(.localized("Permissions")) {
@@ -209,7 +209,7 @@ struct SourceAppsDetailView: View {
 				)
 			}
 		}
-    }
+	}
 	
 	var standardIcon: some View {
 		Image("App_Unknown").appIconStyle(size: 111, isCircle: false)

@@ -44,7 +44,7 @@ struct SigningView: View {
 	}
 		
 	// MARK: Body
-    var body: some View {
+	var body: some View {
 		NBNavigationView("", displayMode: .inline) {
 			Form {
 				_customizationOptions(for: app)
@@ -144,7 +144,7 @@ struct SigningView: View {
 				_temporaryOptions.appName = newName
 			}
 		}
-    }
+	}
 }
 
 // MARK: - Extension: View
@@ -226,11 +226,11 @@ extension SigningView {
 					)
 				}
 				#if NIGHTLY || DEBUG
-				NavigationLink(.localized("Entitlements") + " (BETA)") {
-					SigningEntitlementsView(
-						bindingValue: $_temporaryOptions.appEntitlementsFile
-					)
-				}
+					NavigationLink(.localized("Entitlements") + " (BETA)") {
+						SigningEntitlementsView(
+							bindingValue: $_temporaryOptions.appEntitlementsFile
+						)
+					}
 				#endif
 				NavigationLink(.localized("Tweaks")) {
 					SigningTweaksView(

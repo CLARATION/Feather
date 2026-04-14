@@ -121,15 +121,15 @@ extension Color: @retroactive RawRepresentable {
 }
 
 // MARK: - Get color values of Color
-	// taken from meret
+// taken from meret
 public extension Color {
 	var components: (red: CGFloat, green: CGFloat, blue: CGFloat, opacity: CGFloat) {
 		
-#if canImport(UIKit)
-		typealias NativeColor = UIColor
-#elseif canImport(AppKit)
-		typealias NativeColor = NSColor
-#endif
+		#if canImport(UIKit)
+			typealias NativeColor = UIColor
+		#elseif canImport(AppKit)
+			typealias NativeColor = NSColor
+		#endif
 		
 		var r: CGFloat = 0
 		var g: CGFloat = 0

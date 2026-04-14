@@ -90,14 +90,14 @@ struct InstallPreviewView: View {
 			}
 		}
 		.onAppear(perform: _install)
-        .onAppear {
-            BackgroundAudioManager.shared.start()
-        }
-        .onDisappear {
+		.onAppear {
+			BackgroundAudioManager.shared.start()
+		}
+		.onDisappear {
 			progressTask?.cancel()
 			progressTask = nil
-            BackgroundAudioManager.shared.stop()
-        }
+			BackgroundAudioManager.shared.stop()
+		}
 	}
 	
 	@ViewBuilder

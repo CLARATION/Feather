@@ -31,20 +31,20 @@ struct Certificate: Codable {
 
 	enum CodingKeys: String, CodingKey {
 		case AppIDName,
-			 CreationDate,
-			 Platform,
-			 IsXcodeManaged,
-			 DeveloperCertificates,
-			 PPQCheck,
-			 Entitlements,
-			 ExpirationDate,
-			 Name,
-			 ProvisionedDevices,
-			 TeamIdentifier,
-			 TeamName,
-			 TimeToLive,
-			 UUID,
-			 Version
+		     CreationDate,
+		     Platform,
+		     IsXcodeManaged,
+		     DeveloperCertificates,
+		     PPQCheck,
+		     Entitlements,
+		     ExpirationDate,
+		     Name,
+		     ProvisionedDevices,
+		     TeamIdentifier,
+		     TeamName,
+		     TimeToLive,
+		     UUID,
+		     Version
 		case derEncodedProfile = "DER-Encoded-Profile"
 	}
 }

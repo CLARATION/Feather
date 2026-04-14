@@ -14,7 +14,7 @@ import NimbleViews
 struct SourcesView: View {
 	@Environment(\.horizontalSizeClass) private var horizontalSizeClass
 	#if !NIGHTLY && !DEBUG
-	@AppStorage("Feather.shouldStar") private var _shouldStar: Int = 0
+		@AppStorage("Feather.shouldStar") private var _shouldStar: Int = 0
 	#endif
 	@StateObject var viewModel = SourcesViewModel.shared
 	@State private var _isAddingPresenting = false
@@ -51,9 +51,9 @@ struct SourcesView: View {
 							.padding(isRegular ? 12 : 0)
 							.background(
 								isRegular
-								? RoundedRectangle(cornerRadius: 18, style: .continuous)
+									? RoundedRectangle(cornerRadius: 18, style: .continuous)
 									.fill(Color(.quaternarySystemFill))
-								: nil
+									: nil
 							)
 						}
 						.buttonStyle(.plain)
@@ -114,21 +114,21 @@ struct SourcesView: View {
 		}
 		#if !NIGHTLY && !DEBUG
 		.onAppear {
-			guard _shouldStar < 6 else { return }; _shouldStar += 1
-			guard _shouldStar == 6 else { return }
+				guard _shouldStar < 6 else { return }; _shouldStar += 1
+				guard _shouldStar == 6 else { return }
 			
-			let github = UIAlertAction(title: "GitHub", style: .default) { _ in
-				UIApplication.open("https://github.com/khcrysalis/Feather")
+				let github = UIAlertAction(title: "GitHub", style: .default) { _ in
+					UIApplication.open("https://github.com/khcrysalis/Feather")
+				}
+			
+				let cancel = UIAlertAction(title: .localized("Dismiss"), style: .cancel)
+			
+				UIAlertController.showAlert(
+					title: .localized("Enjoying %@?", arguments: Bundle.main.name),
+					message: .localized("Go to our GitHub and give us a star!"),
+					actions: [github, cancel]
+				)
 			}
-			
-			let cancel = UIAlertAction(title: .localized("Dismiss"), style: .cancel)
-			
-			UIAlertController.showAlert(
-				title: .localized("Enjoying %@?", arguments: Bundle.main.name),
-				message: .localized("Go to our GitHub and give us a star!"),
-				actions: [github, cancel]
-			)
-		}
 		#endif
 	}
 }

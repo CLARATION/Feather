@@ -28,9 +28,9 @@ struct SourceNewsCardInfoView: View {
 							LazyImage(url: iconURL) { state in
 								if let image = state.image {
 									Color.clear.overlay(
-									image
-										.resizable()
-										.aspectRatio(contentMode: .fill)
+										image
+											.resizable()
+											.aspectRatio(contentMode: .fill)
 									)
 								} else {
 									placeholderView
