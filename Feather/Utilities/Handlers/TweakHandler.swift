@@ -217,7 +217,7 @@ class TweakHandler {
 		}
 	}
 	
-	// Read extracted deb file, locate all neccessary contents to copy over to the .app
+	// Read extracted deb file, locate all necessary contents to copy over to the .app
 	private func _handleDirectories(at urls: [URL]) async throws {
 		enum DirectoryType: String {
 			case frameworks = "Frameworks"

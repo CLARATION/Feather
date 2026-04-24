@@ -1,6 +1,6 @@
 # Contributing
 
-Feather is a sideloading app meant to be used on stock versions, to keep compatibility we have to utililize stock features to keep it working. As such, we have specific contribution rules in place to maintain this and Feathers integrity.
+Feather is a sideloading app meant to be used on stock versions, to keep compatibility we have to utilize stock features to keep it working. As such, we have specific contribution rules in place to maintain this and Feathers integrity.
 
 Any contributions should follow the [Code of Conduct](./CODE_OF_CONDUCT.md).
 

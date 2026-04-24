@@ -61,7 +61,7 @@ Visit the [HOW IT WORKS](./HOW_IT_WORKS.md) page.
 - [idevice](https://github.com/jkcoxson/idevice) - Backend for builds with this included, used for communication with `installd`.
 - [*.backloop.dev](https://backloop.dev/) - localhost with public CA signed SSL certificate
 - [Vapor](https://github.com/vapor/vapor) - A server-side Swift HTTP web framework.
-- [Zsign](https://github.com/zhlynn/zsign) - Allowing to sign on-device, reimplimented to work on other platforms such as iOS.
+- [Zsign](https://github.com/zhlynn/zsign) - Allowing to sign on-device, reimplemented to work on other platforms such as iOS.
 - [LiveContainer](https://github.com/LiveContainer/LiveContainer) - Fixes/some help
 - [Nuke](https://github.com/kean/Nuke) - Image caching.
 - [Asspp](https://github.com/Lakr233/Asspp) - Some code for setting up the http server.
