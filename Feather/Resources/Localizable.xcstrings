@@ -2484,6 +2484,12 @@
             "state" : "translated",
             "value" : "Change Nickname"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zmień nazwę"
+          }
         }
       }
     },
@@ -7661,6 +7667,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inject into Extensions"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Załaduj do rozszerzeń"
           }
         }
       }
