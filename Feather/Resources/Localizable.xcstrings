@@ -2476,6 +2476,17 @@
         }
       }
     },
+    "Change Nickname" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change Nickname"
+          }
+        }
+      }
+    },
     "Check Revokage" : {
       "extractionState" : "manual",
       "localizations" : {
