@@ -851,6 +851,12 @@
             "state" : "translated",
             "value" : "Thêm và quản lý chứng chỉ được sử dụng để ký ứng dụng."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加和管理用于签名应用的证书。"
+          }
         }
       }
     },
@@ -1074,6 +1080,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Phương pháp cài đặt nâng cao"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高级安装方式"
           }
         }
       }
@@ -2408,6 +2420,12 @@
             "state" : "translated",
             "value" : "Chứng chỉ được cập nhật thành công."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "证书更新成功。"
+          }
         }
       }
     },
@@ -2489,6 +2507,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zmień nazwę"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "修改昵称"
           }
         }
       }
@@ -3159,6 +3183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Màu chủ đề tùy chỉnh"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自定义主题颜色"
           }
         }
       }
@@ -4139,6 +4169,160 @@
         }
       }
     },
+    "Exclusive Features" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ميزات حصرية"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exkluzivní funkce"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exklusive Funktionen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exclusive Features"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funciones Exclusivas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fonctionnalités Exclusives"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fitur Eksklusif"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funzioni Esclusive"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekskluzywne funkcje"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Özel Özellikler"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tính năng độc quyền"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "专属功能"
+          }
+        }
+      }
+    },
+    "After gaining beta access, you're able to use exclusive features that may not be present on releases!" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بعد الحصول على وصول النسخة التجريبية، يمكنك استخدام ميزات حصرية قد لا تكون متوفرة في النسخ الرسمية!"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Po získání beta přístupu můžete používat exkluzivní funkce, které nemusí být k dispozici ve vydáních!"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nach dem Erhalt des Beta-Zugriffs kannst du exklusive Funktionen nutzen, die möglicherweise nicht in den Releases vorhanden sind!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "After gaining beta access, you're able to use exclusive features that may not be present on releases!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Después de obtener acceso beta, podrás usar funciones exclusivas que pueden no estar presentes en las versiones oficiales!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Après avoir obtenu l'accès bêta, vous pourrez utiliser des fonctionnalités exclusives qui pourraient ne pas être présentes dans les versions!"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setelah mendapatkan akses beta, Anda bisa menggunakan fitur eksklusif yang tidak tersedia di rilis!"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dopo aver ottenuto l'accesso alla beta, puoi usare funzioni esclusive che potrebbero non essere presenti nelle versioni pubblicate!"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Po uzyskaniu dostępu do bety możesz korzystać z ekskluzywnych funkcji, które mogą nie być dostępne w wersjach!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beta erişimini aldıktan sonra, yayınlarda mevcut olmayabilecek özel özellikleri kullanabilirsiniz!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sau khi có quyền truy cập beta, bạn có thể sử dụng các tính năng độc quyền không có trong bản phát hành!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "获取beta版访问权限后，您可以使用正式版中可能没有的专属功能！"
+          }
+        }
+      }
+    },
     "Download StosVPN" : {
       "comment" : "Don't translate StosVPN, this is for linking the download to the required VPN for idevice",
       "extractionState" : "manual",
@@ -4261,6 +4445,12 @@
             "state" : "translated",
             "value" : "Dylibs"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "插件动态库"
+          }
         }
       }
     },
@@ -4289,6 +4479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Biểu tượng thích ứng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动态图标"
           }
         }
       }
@@ -4341,7 +4537,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启用Liquid Glass"
+            "value" : "启用液态玻璃"
           }
         }
       }
@@ -6489,7 +6685,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "GitHub Repo"
+            "value" : "GitHub仓库"
           }
         }
       }
@@ -6542,7 +6738,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "来我们的GitHub添加星标！"
+            "value" : "来我们的GitHub仓库添加星标！"
           }
         }
       }
@@ -6987,6 +7183,12 @@
             "state" : "translated",
             "value" : "idevice"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "idevice"
+          }
         }
       }
     },
@@ -7015,6 +7217,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Phương pháp cài đặt này chỉ dành cho người dùng nâng cao!\n\nNó yêu cầu VPN và tệp ghép nối từ máy tính.\n\nChúng tôi khuyên bạn nên quay lại phương pháp cài đặt trên máy chủ."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此安装方式仅适用于高级用户！\n\n需要 VPN 和来自电脑的配对文件。\n\n建议您返回服务器安装方式。"
           }
         }
       }
@@ -7674,6 +7882,12 @@
             "state" : "translated",
             "value" : "Załaduj do rozszerzeń"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "注入到扩展"
+          }
         }
       }
     },
@@ -8258,6 +8472,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hãy tham gia cùng chúng tôi trên Discord!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加入我们的 Discord"
           }
         }
       }
@@ -9594,6 +9814,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không có nguồn để sao chép"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有可复制的软件源"
           }
         }
       }
@@ -10957,6 +11183,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro Motion"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro Motion"
@@ -14450,6 +14682,12 @@
             "state" : "translated",
             "value" : "Nguồn đã được sao chép vào bộ nhớ tạm"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "软件源已复制到剪贴板"
+          }
         }
       }
     },
@@ -15093,6 +15331,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chuyển lại"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切换回去"
           }
         }
       }
@@ -15741,6 +15985,12 @@
             "state" : "translated",
             "value" : "Biểu tượng màu"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "彩色图标"
+          }
         }
       }
     },
@@ -15918,6 +16168,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tweaks"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "插件"
           }
         }
       }
@@ -16142,6 +16398,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "URL"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "网址"
           }
         }
       }
@@ -16706,6 +16968,125 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "配对文件不可用并且与设备不匹配，请导入可用的的配置文件。"
+          }
+        }
+      }
+    },
+    "Seems like you've gotten your hands on your pairing file!" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seems like you've gotten your hands on your pairing file!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "看起来您已经获取了配对文件！"
+          }
+        }
+      }
+    },
+    "No pairing file found, please import it." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No pairing file found, please import it."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未找到配对文件，请导入。"
+          }
+        }
+      }
+    },
+    "The heartbeat is activated in the background, it will restart when the app is re-opened or prompted. If the status below is pulsing, that means its healthy." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The heartbeat is activated in the background, it will restart when the app is re-opened or prompted. If the status below is pulsing, that means its healthy."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "心跳检测在后台激活，重新打开应用或手动触发时会重新启动。如果下方状态在闪烁，说明运行正常。"
+          }
+        }
+      }
+    },
+    "Connect to LocalDevVPN" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connect to LocalDevVPN"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "连接到 LocalDevVPN"
+          }
+        }
+      }
+    },
+    "Download LocalDevVPN" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Download LocalDevVPN"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下载 LocalDevVPN"
+          }
+        }
+      }
+    },
+    "Socket" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Socket"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "套接字"
+          }
+        }
+      }
+    },
+    "Unable to connect to TCP. Make sure you have loopback VPN enabled and you are on WiFi or Airplane mode." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unable to connect to TCP. Make sure you have loopback VPN enabled and you are on WiFi or Airplane mode."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法连接到 TCP。请确保已启用环回 VPN，并且处于 WiFi 或飞行模式。"
           }
         }
       }

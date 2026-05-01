@@ -41,7 +41,7 @@ struct ExtendedTabbarView: View {
 				.hidden(horizontalSizeClass == .compact)
 			}
 			
-			TabSection("Sources") {
+			TabSection(.localized("Sources")) {
 				Tab(.localized("All Repositories"), systemImage: "globe.desk") {
 					NavigationStack {
 						SourceAppsView(object: Array(_sources), viewModel: viewModel)
