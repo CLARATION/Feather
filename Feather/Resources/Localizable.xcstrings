@@ -851,6 +851,12 @@
             "state" : "translated",
             "value" : "Thêm và quản lý chứng chỉ được sử dụng để ký ứng dụng."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加和管理用于签名应用的证书。"
+          }
         }
       }
     },
@@ -1074,6 +1080,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Phương pháp cài đặt nâng cao"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高级安装方式"
           }
         }
       }
@@ -2408,6 +2420,12 @@
             "state" : "translated",
             "value" : "Chứng chỉ được cập nhật thành công."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "证书更新成功。"
+          }
         }
       }
     },
@@ -2489,6 +2507,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zmień nazwę"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "修改昵称"
           }
         }
       }
@@ -3159,6 +3183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Màu chủ đề tùy chỉnh"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自定义主题颜色"
           }
         }
       }
@@ -4261,6 +4291,12 @@
             "state" : "translated",
             "value" : "Dylibs"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "插件动态库"
+          }
         }
       }
     },
@@ -4289,6 +4325,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Biểu tượng thích ứng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动态图标"
           }
         }
       }
@@ -4341,7 +4383,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "启用Liquid Glass"
+            "value" : "启用液态玻璃"
           }
         }
       }
@@ -6489,7 +6531,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "GitHub Repo"
+            "value" : "GitHub仓库"
           }
         }
       }
@@ -6542,7 +6584,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "来我们的GitHub添加星标！"
+            "value" : "来我们的GitHub仓库添加星标！"
           }
         }
       }
@@ -6987,6 +7029,12 @@
             "state" : "translated",
             "value" : "idevice"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "idevice"
+          }
         }
       }
     },
@@ -7015,6 +7063,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Phương pháp cài đặt này chỉ dành cho người dùng nâng cao!\n\nNó yêu cầu VPN và tệp ghép nối từ máy tính.\n\nChúng tôi khuyên bạn nên quay lại phương pháp cài đặt trên máy chủ."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此安装方式仅适用于高级用户！\n\n需要VPN和来自电脑的配对文件。\n\n建议您返回服务器安装方式。"
           }
         }
       }
@@ -7674,6 +7728,12 @@
             "state" : "translated",
             "value" : "Załaduj do rozszerzeń"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "注入到扩展"
+          }
         }
       }
     },
@@ -8258,6 +8318,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hãy tham gia cùng chúng tôi trên Discord!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加入我们的Discord"
           }
         }
       }
@@ -9594,6 +9660,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không có nguồn để sao chép"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有可复制的软件源"
           }
         }
       }
@@ -10957,6 +11029,12 @@
           }
         },
         "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro Motion"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro Motion"
@@ -14450,6 +14528,12 @@
             "state" : "translated",
             "value" : "Nguồn đã được sao chép vào bộ nhớ tạm"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "软件源已复制到剪贴板"
+          }
         }
       }
     },
@@ -15093,6 +15177,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chuyển lại"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切换回去"
           }
         }
       }
@@ -15741,6 +15831,12 @@
             "state" : "translated",
             "value" : "Biểu tượng màu"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "彩色图标"
+          }
         }
       }
     },
@@ -15918,6 +16014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tweaks"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "插件"
           }
         }
       }
@@ -16142,6 +16244,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "URL"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "网址"
           }
         }
       }
