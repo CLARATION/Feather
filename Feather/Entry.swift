@@ -12,6 +12,10 @@ import OSLog
 
 @main enum Entry {
 	static func main() {
+		let _ = Storage.shared
+		let _ = DownloadManager.shared
+		let _ = HeartbeatManager.shared
+		
 		let delegate = AppDelegate()
 		UIApplication.shared.delegate = delegate
 		_ = UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(AppDelegate.self))
@@ -30,7 +34,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 		ResetView.clearWorkCache()
 		_addDefaultCertificates()
 		
-		let tc = TabController()
+		let tc = TabBarController()
 		window = UIWindow(frame: UIScreen.main.bounds)
 		window?.rootViewController = tc
 		window?.makeKeyAndVisible()

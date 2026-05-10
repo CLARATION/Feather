@@ -8,9 +8,14 @@
 import UIKit
 import SwiftUI
 
-final class TabController: UITabBarController {
+final class TabBarController: UITabBarController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		if #available(iOS 18.0, *) {
+			self.mode = .tabSidebar
+		}
+		
 		_setupTabs()
 	}
 	
@@ -24,22 +29,21 @@ final class TabController: UITabBarController {
 		let sources = _createNavigation(
 			with: .localized("Sources"),
 			using: UIImage(systemName: "globe.desk.fill"),
-			controller: UIHostingController(rootView: SourcesView()),
+			controller: UIHostingController(rootView: SourcesView().environment(\.managedObjectContext, Storage.shared.context)),
 			withNavigation: false,
 		)
 		
 		let library = _createNavigation(
 			with: .localized("Apps"),
 			using: UIImage(systemName: "square.grid.2x2.fill"),
-			controller: UIHostingController(rootView: LibraryView()),
+			controller: UIHostingController(rootView: LibraryView().environment(\.managedObjectContext, Storage.shared.context)),
 			withNavigation: false,
 		)
 		
 		let settings = _createNavigation(
 			with: .localized("Settings"),
 			using: UIImage(systemName: "gearshape.2.fill"),
-			controller: UIHostingController(rootView: SettingsView()),
-			withNavigation: false,
+			controller: SettingsViewController(),
 		)
 		
 		self.setViewControllers([
@@ -61,12 +65,10 @@ final class TabController: UITabBarController {
 			let nav = UINavigationController(rootViewController: controller)
 			nav.tabBarItem.title = title
 			nav.tabBarItem.image = image
-			nav.viewControllers.first?.navigationItem.title = title
 			return nav
 		} else {
 			controller.tabBarItem.title = title
 			controller.tabBarItem.image = image
-			controller.navigationItem.title = title
 			return controller
 		}
 	}
